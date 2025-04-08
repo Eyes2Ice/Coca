@@ -1,0 +1,60 @@
+.hero {
+    &__inner {
+        @include flex-all-between;
+        padding-top: 201px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 100px;
+            left: -80px;
+            z-index: var(--z-index-0);
+            display: inline-block;
+            width: 551px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background: #fa7515;
+            opacity: 0.13;
+            filter: blur(110px);
+        }
+    }
+
+    &__left {
+        max-width: 595px;
+    }
+
+    &__title {
+        margin-bottom: 114px;
+
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 1.2;
+        letter-spacing: -0.04em;
+        color: var(--neutral-color-100);
+        font-feature-settings: 'calt' off;
+    }
+
+    &__subtitle {
+        margin-bottom: 69px;
+    }
+
+    &__form {
+        @include flex-align-center;
+        gap: 16px;
+    }
+
+    &__input {
+        border-bottom: solid 1px var(--neutral-color-40);
+        padding-bottom: 23px;
+        min-width: 280px;
+        color: var(--neutral-color-100);
+        background-color: transparent;
+        line-height: 1.5;
+    }
+
+    &__btn {
+        background-color: var(--neutral-color-100);
+        color: var(--neutral-color-10);
+    }
+}

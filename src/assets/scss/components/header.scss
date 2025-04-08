@@ -1,4 +1,9 @@
 .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: var(--z-index-3);
     padding: 26px 0 22px;
 
     @include mobile {
@@ -93,6 +98,7 @@
             font-weight: 600;
             line-height: 1.5;
             transform: translateX(-50%);
+            user-select: none;
         }
 
         &-checkbox {
