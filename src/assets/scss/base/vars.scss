@@ -16,9 +16,16 @@
     //primary colors
     --primary-color-50: #4e7ddb;
 
+    //decoration colors
+    --decoration-color-circle: #e2f8f0b3;
+
     // container
     --container-padding: 15px;
     --container-width: 1200px;
+
+    @include mobile {
+        --container-width: 480px;
+    }
 
     //transition
     --transition: 0.2s ease-in-out;
@@ -37,4 +44,5 @@
     --neutral-color-140: #fff;
     --logo-color-text: #fff;
     --logo-color-circle: #343542;
+    --decoration-color-circle: #e2f8f033;
 }
